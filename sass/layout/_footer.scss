@@ -1,0 +1,32 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  --card-gap: 0;
+  align-items: baseline;
+}
+
+.footer--color {
+  background-color: var(--black-bg-color);
+}
+
+.footer__title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+  &--white {
+    color: var(--white-text-color);
+  }
+}
+
+.footer__contact {
+  margin-right: 70px;
+}
+
+.footer__social {
+  margin-right: 93px;
+}

@@ -1,0 +1,38 @@
+.social__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--primary-icon-color);
+  transition: color var(--transition), background-color var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--white-text-color);
+    background-color: var(--accent-social-link);
+  }
+  &--footer-color {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--white-text-color);
+  }
+}
+
+.footer {
+  .social--gap {
+    --card-gap: 10px;
+  }
+}
+
+.team-card {
+  .social--gap {
+    --card-gap: 10px;
+    justify-content: center;
+  }
+}
