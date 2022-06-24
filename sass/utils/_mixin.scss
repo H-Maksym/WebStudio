@@ -1,0 +1,79 @@
+// font - text
+@mixin font($fs: 16px, $fw: 400, $lh: 1.25, $ls: 0.03) {
+  font-size: &fs;
+  font-weight: &fw;
+  line-height: &lh;
+  letter-spacing: &ls;
+}
+
+@mixin transition($tp: color, $td: 2500ms, $ttf: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition-property: $tp;
+  transition-duration: $td;
+  transition-timing-function: $ttf;
+}
+
+//transition
+
+// @mixin transition(
+//   $tp: color,
+//   $td: 2500ms,
+//   $ttf: cubic-bezier(0.4, 0, 0.2, 1),
+//   $tp1: color,
+//   $td1: 2500ms,
+//   $ttf1: cubic-bezier(0.4, 0, 0.2, 1)
+// ) {
+//   transition-property: $tp;
+//   transition-duration: $td;
+//   transition-timing-function: $ttf;
+//   transition-property: $tp1;
+//   transition-duration: $td1;
+//   transition-timing-function: $ttf1;
+// }
+
+//  -------- media-query - Адаптивка
+@mixin mq($val) {
+  $mobile: 480px;
+  $tablet: 768px;
+  $desctop: 1200px;
+  @if $val==mob {
+    @media (min-width: $mobile) {
+      @content;
+    }
+  } @else if $val==mob-only {
+    @media (max-width:#{$tablet - 0.02}) {
+      @content;
+    }
+  } @else if $val==tab {
+    @media (min-width: $tablet) {
+      @content;
+    }
+  } @else if $val==tab-only {
+    @media (min-width:$tablet) and (max-width:#{$desctop - 0.02}) {
+      @content;
+    }
+  } @else if $val==desc {
+    @media (min-width: $desctop) {
+      @content;
+    }
+  } @else if $val==noDesc {
+    @media (max-width:#{$desctop - 0.02}) {
+      @content;
+    }
+  } @else if $val==retina {
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-moz-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      @content;
+    }
+  }
+}
+
+@mixin fonts($fs, $fw: 400, $lh: 1.2, $ls: 0.03em) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
