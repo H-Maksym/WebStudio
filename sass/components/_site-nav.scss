@@ -1,0 +1,31 @@
+.site-nav__link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+  transition: color var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.site-nav__current {
+  position: relative;
+  color: var(--accent-text-color);
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translatex(-50%);
+    height: 4px;
+    width: 100%;
+    background: #2196f3;
+    border-radius: 2px;
+  }
+}

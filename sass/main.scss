@@ -1,5 +1,5 @@
 @import './utils/reset';
-@import './utils/fonts';
+// @import './utils/fonts';
 @import './utils/variables';
 @import './utils/mixin';
 
@@ -16,16 +16,14 @@
 @import './components/form-subscribe';
 @import './components/form-registration';
 @import './components/adress';
+@import './components/site-nav';
+@import './components/contacts';
 
-
-@import'./layout/header';
-@import'./layout/hero';
-@import'./layout/features';
-@import'./layout/works';
-@import'./layout/team';
-@import'./layout/client';
-@import'./layout/portfolio';
-@import'./layout/footer';
-
-
-
+@import './layout/header';
+@import './layout/hero';
+@import './layout/features';
+@import './layout/works';
+@import './layout/team';
+@import './layout/client';
+@import './layout/portfolio';
+@import './layout/footer';
