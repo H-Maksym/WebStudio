@@ -2,7 +2,7 @@ button {
   cursor: pointer;
 }
 
-.btn {
+%btn {
   /* reset browser styles  - для кнопки потрібно скидати стилі*/
   display: inline-flex;
   justify-content: center;
@@ -20,14 +20,10 @@ button {
   border-color: transparent;
   color: var(--title-text-color);
   background: var(--secondary-bg-color);
-  &__icon--append {
-    margin-left: 10px;
-    fill: currentColor;
-  }
 }
 
-.btn__primary {
-  @extend .btn;
+.btn-primary {
+  @extend %btn;
   min-width: 200px;
   padding: 10px 32px;
   color: var(--white-text-color);
@@ -41,10 +37,14 @@ button {
   &:focus {
     background-color: var(--primary-btn-bg-accentcolor);
   }
+  &__icon--append {
+    margin-left: 10px;
+    fill: currentColor;
+  }
 }
 
-.btn__secondary {
-  @extend .btn;
+.btn-secondary {
+  @extend %btn;
   transition: color var(--transition), box-shadow var(--transition),
     background-color var(--transition);
   &:hover,
@@ -57,6 +57,7 @@ button {
 }
 
 .btn-modal {
+  @extend %btn;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -69,12 +70,12 @@ button {
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   color: var(--black-text-color);
-}
-
-.btn-modal__icon {
-  fill: currentColor;
   &:hover,
   &:focus {
     color: var(--accent-text-color);
   }
+}
+
+.btn-modal__icon {
+  fill: currentColor;
 }
