@@ -8,12 +8,12 @@
 
 // }
 
-@mixin font($fs: 16px, $fw: 400, $lh: 1.25, $ls: 0.03) {
-  font-size: &fs;
-  font-weight: &fw;
-  line-height: &lh;
-  letter-spacing: &ls;
-}
+// @mixin font($fs, $lh: 1.71, $fw: 400, $ls: 0.03) {
+//   font-size: $fs px;
+//   line-height: $lh;
+//   font-weight: $fw;
+//   letter-spacing: $ls;
+// }
 
 @mixin transition($tp: color, $td: 2500ms, $ttf: cubic-bezier(0.4, 0, 0.2, 1)) {
   transition-property: $tp;

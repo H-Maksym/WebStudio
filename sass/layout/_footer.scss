@@ -7,14 +7,27 @@
   }
 
   .address__list {
-    --card-gap: 9px;
+    --card-gap: 8px;
     flex-direction: column;
+    @include mq(desc) {
+      --card-gap: 9px;
+    }
   }
 }
 
+// @include mq(tab) {
+//   --card-item: 3;
+// }
+
 .footer__container {
-  --card-gap: 0;
-  align-items: baseline;
+  display: flex;
+  text-align: center;
+  --card-gap: 60px;
+  justify-content: center;
+  @include mq(desc) {
+    align-items: baseline;
+    --card-gap: 0px;
+  }
 }
 
 .footer__title {
@@ -28,12 +41,12 @@
   }
 }
 
-.footer {
-  &__contact {
+@include mq(desc) {
+  .footer__contact {
     margin-right: 70px;
   }
 
-  &__social {
+  .footer__social {
     margin-right: 93px;
   }
 }

@@ -42,10 +42,8 @@ address {
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
-  font-size: body fs;
-  font-weight: body fw;
-  line-height: body lh;
-  letter-spacing: body ls;
+  font-weight: 400;
+  letter-spacing: 0.03em;
   font-family: var(--primary-font-family);
   font-style: normal;
 }
@@ -105,10 +103,10 @@ img {
 }
 
 .container {
+  width: 100%;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-  /* background-color: pink; */
 }
 @media (min-width: 480px) {
   .container {
@@ -127,15 +125,28 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section__title {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+}
+@media (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .logo {
@@ -324,9 +335,9 @@ button {
 }
 
 .form-signup__input {
-  margin-right: 12px;
   padding: 15px 16px;
-  width: 358px;
+  margin-bottom: 20px;
+  width: calc(100vw - 30px);
   height: 50px;
   font-size: 16px;
   line-height: 1.25;
@@ -342,6 +353,13 @@ button {
 }
 .form-signup__input:focus {
   color: var(--white-text-color);
+}
+@media (min-width: 1200px) {
+  .form-signup__input {
+    margin-right: 12px;
+    margin-bottom: 0;
+    width: 358px;
+  }
 }
 
 .form {
@@ -600,19 +618,26 @@ button {
   letter-spacing: 0.06em;
 }
 
-.features {
-  padding-bottom: 0;
+@media (min-width: 1200px) {
+  .features {
+    padding-bottom: 0;
+  }
 }
 
-.features__list {
-  --card-item: 4;
-  --card-gap: 30px;
+@media (min-width: 768px) {
+  .features__list {
+    --card-item: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .features__list {
+    --card-item: 4;
+  }
 }
 
 .feature__icon-wrap {
-  height: 120px;
-  width: 270px;
   display: flex;
+  height: 120px;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
@@ -622,10 +647,16 @@ button {
 
 .feature-wrap__title {
   margin-bottom: 10px;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  font-weight: 700;
+  justify-content: center;
   text-transform: uppercase;
+}
+@media (max-width: 767.98px) {
+  .feature-wrap__title {
+    text-align: center;
+  }
 }
 
 .feature-wrap__text {
@@ -633,29 +664,56 @@ button {
   line-height: 1.71;
 }
 
+.work {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .work {
+    display: block;
+  }
+}
+
 .work__item {
-  position: relative;
-  --card-item: 3;
-  --card-gap: 30px;
+  display: none;
+}
+@media (min-width: 1200px) {
+  .work__item {
+    display: flex;
+    --card-item: 3;
+    position: relative;
+  }
 }
 
 .work__text {
-  position: absolute;
-  padding: 27px 5px;
-  bottom: 0;
-  width: 100%;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  text-align: center;
-  font-weight: 700;
-  color: var(--white-text-color);
-  background: rgba(47, 48, 58, 0.8);
+  display: none;
+}
+@media (min-width: 1200px) {
+  .work__text {
+    display: block;
+    position: absolute;
+    padding: 27px 5px;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    color: var(--white-text-color);
+    background: rgba(47, 48, 58, 0.8);
+  }
 }
 
-.team__list {
-  --card-item: 4;
-  --card-gap: 30px;
+@media (min-width: 768px) {
+  .team__list {
+    display: flex;
+    --card-item: 2;
+  }
+}
+@media (min-width: 1200px) {
+  .team__list {
+    --card-item: 4;
+  }
 }
 
 .team--bg {
@@ -687,8 +745,17 @@ button {
 }
 
 .client__list {
-  --card-item: 6;
-  --card-gap: 30px;
+  --card-item: 2;
+}
+@media (min-width: 768px) {
+  .client__list {
+    --card-item: 3;
+  }
+}
+@media (min-width: 1200px) {
+  .client__list {
+    --card-item: 6;
+  }
 }
 
 .client__link {
@@ -792,13 +859,26 @@ button {
   background-color: var(--black-bg-color);
 }
 .footer .address__list {
-  --card-gap: 9px;
+  --card-gap: 8px;
   flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .footer .address__list {
+    --card-gap: 9px;
+  }
 }
 
 .footer__container {
-  --card-gap: 0;
-  align-items: baseline;
+  display: flex;
+  text-align: center;
+  --card-gap: 60px;
+  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .footer__container {
+    align-items: baseline;
+    --card-gap: 0px;
+  }
 }
 
 .footer__title {
@@ -812,9 +892,12 @@ button {
   color: var(--white-text-color);
 }
 
-.footer__contact {
-  margin-right: 70px;
-}
-.footer__social {
-  margin-right: 93px;
+@media (min-width: 1200px) {
+  .footer__contact {
+    margin-right: 70px;
+  }
+
+  .footer__social {
+    margin-right: 93px;
+  }
 }/*# sourceMappingURL=main.css.map */

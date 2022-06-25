@@ -1,9 +1,8 @@
 .form-signup__input {
-  margin-right: 12px;
   padding: 15px 16px;
-  width: 358px;
+  margin-bottom: 20px;
+  width: calc(100vw - 30px);
   height: 50px;
-
   font-size: 16px;
   line-height: 1.25;
 
@@ -21,5 +20,11 @@
 
   &:focus {
     color: var(--white-text-color);
+  }
+
+  @include mq(desc) {
+    margin-right: 12px;
+    margin-bottom: 0;
+    width: 358px;
   }
 }

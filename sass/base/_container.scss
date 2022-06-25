@@ -1,9 +1,10 @@
 .container {
   //   width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-  /* background-color: pink; */
+  //   background-color: pink;
   @include mq(mob) {
     width: 480px;
   }

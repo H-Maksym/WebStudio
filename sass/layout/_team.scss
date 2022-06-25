@@ -1,6 +1,11 @@
 .team__list {
-  --card-item: 4;
-  --card-gap: 30px;
+  @include mq(tab) {
+    display: flex;
+    --card-item: 2;
+  }
+  @include mq(desc) {
+    --card-item: 4;
+  }
 }
 
 .team--bg {

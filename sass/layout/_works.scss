@@ -1,10 +1,24 @@
+.work {
+  display: none;
+  @include mq(desc) {
+    display: block;
+  }
+}
+
 .work__item {
-    position: relative;
+  display: none;
+  @include mq(desc) {
+    display: flex;
     --card-item: 3;
-    --card-gap: 30px;
+    // padding-bottom: 0;
+    position: relative;
+  }
 }
 
 .work__text {
+  display: none;
+  @include mq(desc) {
+    display: block;
     position: absolute;
     padding: 27px 5px;
     bottom: 0;
@@ -16,4 +30,5 @@
     font-weight: 700;
     color: var(--white-text-color);
     background: rgba(47, 48, 58, 0.8);
+  }
 }

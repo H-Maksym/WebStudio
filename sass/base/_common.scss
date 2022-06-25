@@ -2,7 +2,8 @@ body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
 
-  @include font(22, 400, 0.03em);
+  font-weight: 400;
+  letter-spacing: 0.03em;
 
   font-family: var(--primary-font-family);
   font-style: normal;
