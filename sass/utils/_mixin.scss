@@ -1,4 +1,13 @@
 // font - text
+
+// $tpl:$i1,$i2,$i3,$i4;
+// @mixin transition($tpl) {
+//     @each $i in $tpl{
+//         transition: $i 250ms linear,$i1 250ms linear,$i2 250ms linear;
+//     }
+
+// }
+
 @mixin font($fs: 16px, $fw: 400, $lh: 1.25, $ls: 0.03) {
   font-size: &fs;
   font-weight: &fw;
@@ -11,24 +20,6 @@
   transition-duration: $td;
   transition-timing-function: $ttf;
 }
-
-//transition
-
-// @mixin transition(
-//   $tp: color,
-//   $td: 2500ms,
-//   $ttf: cubic-bezier(0.4, 0, 0.2, 1),
-//   $tp1: color,
-//   $td1: 2500ms,
-//   $ttf1: cubic-bezier(0.4, 0, 0.2, 1)
-// ) {
-//   transition-property: $tp;
-//   transition-duration: $td;
-//   transition-timing-function: $ttf;
-//   transition-property: $tp1;
-//   transition-duration: $td1;
-//   transition-timing-function: $ttf1;
-// }
 
 //  -------- media-query - Адаптивка
 @mixin mq($val) {
@@ -71,9 +62,24 @@
   }
 }
 
-@mixin fonts($fs, $fw: 400, $lh: 1.2, $ls: 0.03em) {
-  font-size: $fs;
-  font-weight: $fw;
-  line-height: $lh;
-  letter-spacing: $ls;
-}
+// $function: 250ms linear;
+
+// @mixin transition($value) {
+//   transition: $value;
+// }
+
+// body {
+//   @include transition((box-shadow $function, background-color $function));
+//   background-color: white;
+// }
+
+// @function append($list, $value) {
+//   @return join($list1: $list, $list2: $value, $separator: comma);
+// }
+
+// @mixin transition($values) {
+//   $transition: ();
+//   @each $property in $values {
+//     $transition: append($transition, $property, $separator: comma);
+//   }
+// }

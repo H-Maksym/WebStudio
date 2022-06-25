@@ -1,7 +1,16 @@
 .container {
+  //   width: 1200px;
+  margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  /* background-color: pink; */
+  @include mq(mob) {
+    width: 480px;
+  }
+  @include mq(tab) {
+    width: 768px;
+  }
+  @include mq(desc) {
     width: 1200px;
-    margin: 0 auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    /* background-color: pink; */
+  }
 }
