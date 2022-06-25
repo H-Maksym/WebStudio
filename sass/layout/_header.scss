@@ -1,31 +1,15 @@
 .header {
   border-bottom: 1px solid #ececec;
+  @include mq(mob-only) {
+    .site-nav,
+    .contacts {
+      display: none;
+    }
+  }
 }
 
 .header__container,
 .header__nav {
   align-items: center;
   --card-gap: 0;
-}
-
-.header {
-  .site-nav {
-    --card-item: 3;
-    --card-gap: 50px;
-  }
-  .contacts {
-    --card-item: 2;
-    --card-gap: 30px;
-    align-items: center;
-  }
-
-  .contacts {
-    margin-left: auto;
-  }
-
-  .contacts__link {
-    // display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
 }

@@ -21,7 +21,11 @@
 }
 
 .team-card {
-  padding: 30px 10px;
+  padding: 30px 10px 24px;
+
+  @include mq(desc) {
+    padding-bottom: 30px;
+  }
 }
 
 .team-card__title {

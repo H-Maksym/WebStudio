@@ -1,34 +1,24 @@
 .work {
-  display: none;
-  @include mq(desc) {
-    display: block;
+  @include mq(noDesc) {
+    display: none;
   }
 }
 
 .work__item {
-  display: none;
-  @include mq(desc) {
-    display: flex;
-    --card-item: 3;
-    // padding-bottom: 0;
-    position: relative;
-  }
+  --card-item: 3;
+  position: relative;
 }
 
 .work__text {
-  display: none;
-  @include mq(desc) {
-    display: block;
-    position: absolute;
-    padding: 27px 5px;
-    bottom: 0;
-    width: 100%;
-    font-size: 14px;
-    line-height: 1.14;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 700;
-    color: var(--white-text-color);
-    background: rgba(47, 48, 58, 0.8);
-  }
+  position: absolute;
+  padding: 27px 5px;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: var(--white-text-color);
+  background: rgba(47, 48, 58, 0.8);
 }

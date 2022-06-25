@@ -1,3 +1,10 @@
+.header {
+  .site-nav {
+    --card-item: 3;
+    --card-gap: 50px;
+  }
+}
+
 .site-nav__link {
   display: flex;
   padding-top: 32px;

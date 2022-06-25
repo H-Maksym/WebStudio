@@ -22,6 +22,10 @@
     color: var(--white-text-color);
   }
 
+  @include mq(tab) {
+    width: 450px;
+  }
+
   @include mq(desc) {
     margin-right: 12px;
     margin-bottom: 0;

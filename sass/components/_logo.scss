@@ -2,9 +2,20 @@
   display: block;
   font-family: var(--logo-font-family);
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   color: var(--logo-text-color);
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  @include mq(tab) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @include mq(desc) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo--black {
   color: #000000;
@@ -14,15 +25,14 @@
 }
 
 .logo--header-gap {
-  margin-right: 93px;
+  @include mq(tab) {
+    margin-right: 88px;
+  }
+  @include mq(desc) {
+    margin-right: 93px;
+  }
 }
 
 .logo--footer-gap {
   margin-bottom: 20px;
 }
-
-// .footer {
-//   .logo {
-//     justify-content: center;
-//   }
-// }

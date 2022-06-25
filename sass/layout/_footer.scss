@@ -21,11 +21,19 @@
 
 .footer__container {
   display: flex;
+
   text-align: center;
   --card-gap: 60px;
   justify-content: center;
-  @include mq(desc) {
+  @include mq(tab) {
+    --card-item: 2;
+    justify-content: space-around;
     align-items: baseline;
+    row-gap: 60px;
+  }
+
+  @include mq(desc) {
+    text-align: left;
     --card-gap: 0px;
   }
 }
