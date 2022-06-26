@@ -17,20 +17,20 @@
   }
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../../images/mob/mob-herobackgroundimg.jpg');
+    url('./../../images/mob/mob-herobackgroundimg.jpg');
 
   @include mq(retina) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/mob/mob-herobackgroundimg@2x.jpg');
+      url('./../../images/mob/mob-herobackgroundimg@2x.jpg');
   }
 
   @include mq(tab) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/tab/tab-herobackgroundimg.jpg');
+      url('./../../images/tab/tab-herobackgroundimg.jpg');
 
     @include mq(retina) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/tab/tab-herobackgroundimg@2x.jpg');
+        url('./../../images/tab/tab-herobackgroundimg@2x.jpg');
     }
   }
 
@@ -40,10 +40,10 @@
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/desc/desc-herobackgroundimg.jpg');
+      url('./../../images/desc/desc-herobackgroundimg.jpg');
     @include mq(retina) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../../images/desc/desc-herobackgroundimg@2x.jpg');
+        url('./../../images/desc/desc-herobackgroundimg@2x.jpg');
     }
   }
 }
