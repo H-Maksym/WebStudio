@@ -81,3 +81,44 @@ button {
 .btn-modal__icon {
   fill: currentColor;
 }
+
+.btn-menu {
+  @extend %btn;
+  position: absolute;
+  padding: 0;
+  border-radius: 0;
+  top: 10px;
+  right: 15px;
+  color: black;
+  background-color: transparent;
+  transition: color var(--transition), opacity var(--transition);
+  z-index: 50;
+  & .icon-menu-close {
+    display: none;
+    transition: color var(--transition);
+  }
+  &.is-open .icon-menu-close {
+    display: block;
+    transition: color var(--transition);
+  }
+
+  &.is-open .icon-menu {
+    display: none;
+    transition: color var(--transition);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
+  }
+}
+
+.button_icon-menu {
+  fill: currentColor;
+}
+
+@include mq(tab) {
+  .btn-menu {
+    display: none;
+  }
+}
