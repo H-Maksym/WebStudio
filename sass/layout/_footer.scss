@@ -2,6 +2,11 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  @media (max-width: 480px) {
+    padding-top: calc(60 * (100vw / 480));
+    padding-bottom: calc(60 * (100vw / 480));
+  }
+
   &--color {
     background-color: var(--black-bg-color);
   }
@@ -21,10 +26,14 @@
 
 .footer__container {
   display: flex;
-
   text-align: center;
   --card-gap: 60px;
   justify-content: center;
+
+  @media (max-width: 480px) {
+    --card-gap: calc(60 * (100vw / 480));
+  }
+
   @include mq(tab) {
     --card-item: 2;
     justify-content: space-around;
@@ -46,6 +55,9 @@
   margin-bottom: 20px;
   &--white {
     color: var(--white-text-color);
+  }
+  @media (max-width: 480px) {
+    font-size: calc(14 * (100vw / 480));
   }
 }
 

@@ -19,13 +19,12 @@
   </head>
 
   <body>
-    <header class="header">
+    <!-- <header class="header">
       <div class="container header__container card-set">
         <nav class="header__nav card-set">
           <a href="./index.html" class="logo logo--header-gap" lang="en"
             >Web<span class="logo--black">Studio</span></a
           >
-          <!-- menu burger -->
           <ul class="site-nav card-set">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link site-nav__current">Студия</a>
@@ -48,7 +47,6 @@
             aria-controls="menu-container"
           >
             <use class="icon-menu" href="./images/icon.svg#icon-menu"></use>
-            <use class="icon-menu-close" href="./images/icon.svg#icon-close"></use>
           </svg>
         </button>
 
@@ -70,7 +68,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <!-- Main Section -->
@@ -150,25 +148,66 @@
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="work-list card-set">
             <li class="work__item card-set-item">
-              <img
-                src="./images/developer.jpg"
-                alt="Десктопные приложения"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desc/developer-370.webp    370w,
+                    ./images/desc/developer-740@2x.webp 740w
+                  "
+                  sizes="370px"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/desc/developer-370.jpg    370w,
+                    ./images/desc/developer-740@2x.jpg 740w
+                  "
+                  src="./images/developer.jpg"
+                  alt="Десктопные приложения"
+                  sizes="370px"
+                />
+              </picture>
+
               <p class="work__text">Десктопные приложения</p>
             </li>
             <li class="work__item card-set-item">
-              <img
-                src="./images/adaptation.jpg"
-                alt="Мобильные приложения"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desc/adaptation-370.webp    370w,
+                    ./images/desc/adaptation-740@2x.webp 740w
+                  "
+                  sizes="370px"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/desc/adaptation-370.jpg    370w,
+                    ./images/desc/adaptation-740@2x.jpg 740w
+                  "
+                  src="./images/adaptation.jpg"
+                  alt="Мобильные приложения"
+                  sizes="370px"
+                />
+              </picture>
               <p class="work__text">Мобильные приложения</p>
             </li>
             <li class="work__item card-set-item">
-              <img src="./images/design.jpg" alt="Дизайнерские решения" width="370" height="294" />
+              <picture>
+                <source
+                  srcset="./images/desc/design-370.webp 370w, ./images/desc/design-740@2x.webp 740w"
+                  sizes="370px"
+                  type="image/webp"
+                />
+                <!-- sizes="(min-width: 1200px) 370px, 100vw" -->
+                <img
+                  srcset="./images/desc/design-370.jpg 370w, ./images/desc/design-740@2x.jpg 740w"
+                  src="./images/design.jpg"
+                  alt="Дизайнерские решения"
+                  sizes="370px"
+                />
+              </picture>
+
               <p class="work__text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -181,19 +220,41 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team__list card-set">
             <li class="team__item card-set-item">
-              <img
-                src="./images/demyanenkoihor.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/demyanenkoihor-270.webp    270w,
+                    ./images/team/demyanenkoihor-540@2x.webp 540w,
+                    ./images/team/demyanenkoihor-354.webp    354w,
+                    ./images/team/demyanenkoihor-708@2x.webp 708w,
+                    ./images/team/demyanenkoihor-450.webp    450w,
+                    ./images/team/demyanenkoihor-900@2x.webp 900w
+                  "
+                  type="image/webp"
+                  sizes="(min-width:1200px) 25vw ,(min-width:768px) 50vw , 100vw"
+                />
+                <img
+                  alt="Игорь Демьяненко"
+                  srcset="
+                    ./images/team/demyanenkoihor-270.jpg    270w,
+                    ./images/team/demyanenkoihor-540@2x.jpg 540w,
+                    ./images/team/demyanenkoihor-354.jpg    354w,
+                    ./images/team/demyanenkoihor-708@2x.jpg 708w,
+                    ./images/team/demyanenkoihor-450.jpg    450w,
+                    ./images/team/demyanenkoihor-900@2x.jpg 900w
+                  "
+                  src="./images/team/demyanenkoihor-450.jpg "
+                  sizes="(min-width:1200px) 25vw , (min-width:768px) 50vw , 100vw"
+                />
+              </picture>
+
               <div class="team-card">
                 <h3 class="team-card__title">Игорь Демьяненко</h3>
                 <p class="team-card__text">Product Designer</p>
                 <ul class="social social--gap card-set">
                   <li class="social__item">
                     <a
-                      arial-label="ссылка instagram"
+                      aria-label="ссылка instagram"
                       href="https://www.instagram.com/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -206,7 +267,7 @@
                   </li>
                   <li class="social__item">
                     <a
-                      arial-label="ссылка twitter"
+                      aria-label="ссылка twitter"
                       href="https://twitter.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -219,7 +280,7 @@
                   </li>
                   <li class="social__item">
                     <a
-                      arial-label="ссылка facebook"
+                      aria-label="ссылка facebook"
                       href="https://www.facebook.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -232,7 +293,7 @@
                   </li>
                   <li class="social__item">
                     <a
-                      arial-label="ссылка linkedin"
+                      aria-label="ссылка linkedin"
                       href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -247,14 +308,40 @@
               </div>
             </li>
             <li class="team__item card-set-item">
-              <img src="./images/repinaolga.jpg" alt="Ольга Репина" width="270" height="260" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/repinaolga-270.webp    270w,
+                    ./images/team/repinaolga-540@2x.webp 540w,
+                    ./images/team/repinaolga-354.webp    354w,
+                    ./images/team/repinaolga-708@2x.webp 708w,
+                    ./images/team/repinaolga-450.webp    450w,
+                    ./images/team/repinaolga-900@2x.webp 900w
+                  "
+                  type="image/webp"
+                  sizes="(min-width:1200px) 25vw ,(min-width:768px) 50vw , 100vw"
+                />
+                <img
+                  alt="Ольга Репина"
+                  srcset="
+                    ./images/team/repinaolga-270.jpg    270w,
+                    ./images/team/repinaolga-540@2x.jpg 540w,
+                    ./images/team/repinaolga-354.jpg    354w,
+                    ./images/team/repinaolga-708@2x.jpg 708w,
+                    ./images/team/repinaolga-450.jpg    450w,
+                    ./images/team/repinaolga-900@2x.jpg 900w
+                  "
+                  sizes="(min-width:1200px) 25vw , (min-width:768px) 50vw , 100vw"
+                  src="./images/team/repinaolga-450.jpg"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Ольга Репина</h3>
                 <p class="team-card__text">Frontend Developer</p>
                 <ul class="social social--gap card-set">
                   <li class="social__item">
                     <a
-                      arial-label="ссылка instagram"
+                      aria-label="ссылка instagram"
                       href="https://www.instagram.com/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -267,7 +354,7 @@
                   </li>
                   <li class="social__item">
                     <a
-                      arial-label="ссылка twitter"
+                      aria-label="ссылка twitter"
                       href="https://twitter.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -280,7 +367,7 @@
                   </li>
                   <li class="social__item">
                     <a
-                      arial-label="ссылка facebook"
+                      aria-label="ссылка facebook"
                       href="https://www.facebook.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -293,7 +380,7 @@
                   </li>
                   <li class="social__item">
                     <a
-                      arial-label="ссылка linkedin"
+                      aria-label="ссылка linkedin"
                       href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -308,19 +395,40 @@
               </div>
             </li>
             <li class="team__item card-set-item">
-              <img
-                src="./images/tarasovmykola.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/tarasovmykola-270.webp    270w,
+                    ./images/team/tarasovmykola-540@2x.webp 540w,
+                    ./images/team/tarasovmykola-354.webp    354w,
+                    ./images/team/tarasovmykola-708@2x.webp 708w,
+                    ./images/team/tarasovmykola-450.webp    450w,
+                    ./images/team/tarasovmykola-900@2x.webp 900w
+                  "
+                  type="image/webp"
+                  sizes="(min-width:1200px) 25vw ,(min-width:768px) 50vw , 100vw"
+                />
+                <img
+                  alt="Николай Тарасов"
+                  srcset="
+                    ./images/team/tarasovmykola-270.jpg    270w,
+                    ./images/team/tarasovmykola-540@2x.jpg 540w,
+                    ./images/team/tarasovmykola-354.jpg    354w,
+                    ./images/team/tarasovmykola-708@2x.jpg 708w,
+                    ./images/team/tarasovmykola-450.jpg    450w,
+                    ./images/team/tarasovmykola-900@2x.jpg 900w
+                  "
+                  sizes="(min-width:1200px) 25vw , (min-width:768px) 50vw , 100vw"
+                  src="./images/team/tarasovmykola-450.jpg"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Николай Тарасов</h3>
                 <p class="team-card__text">Marketing</p>
                 <ul class="social social--gap card-set">
                   <li class="social__item">
                     <a
-                      arial-label="ссылка instagram"
+                      aria-label="ссылка instagram"
                       href="https://www.instagram.com/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -333,7 +441,7 @@
                   </li>
                   <li class="social__item">
                     <a
-                      arial-label="ссылка twitter"
+                      aria-label="ссылка twitter"
                       href="https://twitter.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -346,7 +454,7 @@
                   </li>
                   <li class="social__item">
                     <a
-                      arial-label="ссылка facebook"
+                      aria-label="ссылка facebook"
                       href="https://www.facebook.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -359,7 +467,7 @@
                   </li>
                   <li class="social__item">
                     <a
-                      arial-label="ссылка linkedin"
+                      aria-label="ссылка linkedin"
                       href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -374,19 +482,40 @@
               </div>
             </li>
             <li class="team__item card-set-item">
-              <img
-                src="./images/ermakovmyhailo.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/ermakovmyhailo-270.webp    270w,
+                    ./images/team/ermakovmyhailo-540@2x.webp 540w,
+                    ./images/team/ermakovmyhailo-354.webp    354w,
+                    ./images/team/ermakovmyhailo-708@2x.webp 708w,
+                    ./images/team/ermakovmyhailo-450.webp    450w,
+                    ./images/team/ermakovmyhailo-900@2x.webp 900w
+                  "
+                  type="image/webp"
+                  sizes="(min-width:1200px) 25vw ,(min-width:768px) 50vw , 100vw"
+                />
+                <img
+                  alt="Михаил Ермаков"
+                  srcset="
+                    ./images/team/ermakovmyhailo-270.jpg    270w,
+                    ./images/team/ermakovmyhailo-540@2x.jpg 540w,
+                    ./images/team/ermakovmyhailo-354.jpg    354w,
+                    ./images/team/ermakovmyhailo-708@2x.jpg 708w,
+                    ./images/team/ermakovmyhailo-450.jpg    450w,
+                    ./images/team/ermakovmyhailo-900@2x.jpg 900w
+                  "
+                  sizes="(min-width:1200px) 25vw , (min-width:768px) 50vw , 100vw"
+                  src="./images/team/ermakovmyhailo-450.jpg"
+                />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Михаил Ермаков</h3>
                 <p class="team-card__text">UI Designer</p>
                 <ul class="social social--gap card-set">
                   <li class="social__item">
                     <a
-                      arial-label="ссылка instagram"
+                      aria-label="ссылка instagram"
                       href="https://www.instagram.com/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -399,7 +528,7 @@
                   </li>
                   <li class="social__item">
                     <a
-                      arial-label="ссылка twitter"
+                      aria-label="ссылка twitter"
                       href="https://twitter.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -412,7 +541,7 @@
                   </li>
                   <li class="social__item">
                     <a
-                      arial-label="ссылка facebook"
+                      aria-label="ссылка facebook"
                       href="https://www.facebook.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -425,7 +554,7 @@
                   </li>
                   <li class="social__item">
                     <a
-                      arial-label="ссылка linkedin"
+                      aria-label="ссылка linkedin"
                       href="https://www.linkedin.com/"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -670,14 +799,28 @@
         </form>
       </div>
     </div>
-    <div class="mobile-menu is-open" id="menu-container" data-menu>
-      <!-- <ul class="social-list">
+
+    <!-- <div class="mobile-menu is-open" id="menu-container" data-menu> -->
+    <!-- <ul class="social-list">
         <li class="social-list__item">Instagram</li>
         <li class="social-list__item">Twitter</li>
         <li class="social-list__item">Facebook</li>
         <li class="social-list__item">LinkedIn</li>
       </ul> -->
-      <ul class="social-list card-set">
+
+    <!-- <button type="button" class="btn-menu is-open" aria-expanded="false" data-menu-button>
+        <svg
+          class="button_icon-menu"
+          width="40px"
+          height="40px"
+          aria-label="Переключатель мобильного меню"
+          aria-controls="menu-container"
+        >
+          <use class="icon-menu" href="./images/icon.svg#icon-menu"></use>
+          <use class="icon-menu-close" href="./images/icon.svg#icon-close"></use>
+        </svg>
+      </button> -->
+    <!-- <ul class="social-list card-set">
         <li class="social-list__item">
           <a href="" class="social-list__link" aria-label="ccылка на Instagram">Instagram</a>
         </li>
@@ -690,8 +833,9 @@
         <li class="social-list__item">
           <a href="" class="social-list__link" aria-label="ccылка на LinkedIn">LinkedIn</a>
         </li>
-      </ul>
-    </div>
+      </ul> -->
+
+    <!-- </div> -->
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

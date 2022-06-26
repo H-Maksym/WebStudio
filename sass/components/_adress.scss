@@ -12,4 +12,7 @@
   &:focus {
     color: var(--accent-text-color);
   }
+  @media (max-width: 480px) {
+    font-size: calc(14 * (100vw / 480));
+  }
 }

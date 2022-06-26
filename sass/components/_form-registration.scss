@@ -9,6 +9,9 @@
   text-align: center;
   align-self: center;
   margin-bottom: 12px;
+  @media (max-width: 480px) {
+    font-size: calc(20 * (100vw / 480));
+  }
 }
 
 .form__field {
@@ -25,13 +28,20 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  @media (max-width: 480px) {
+    font-size: calc(12 * (100vw / 480));
+    margin-bottom: calc(4 * (100vw / 480));
+  }
 }
 
 .form__textarea:placeholder-shown {
   color: rgba(var(--primary-text-color), 0.5);
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+  @media (max-width: 480px) {
+    font-size: calc(14 * (100vw / 480));
+  }
 }
 
 .form__icon-input {
@@ -39,19 +49,35 @@
   left: 18px;
   top: 50%;
   transform: translateY(-50%);
+  @media (max-width: 480px) {
+    left: calc(18 * (100vw / 480));
+    width: calc(14 * (100vw / 480));
+    height: calc(14 * (100vw / 480));
+  }
 }
 
 .form__input {
   width: 100%;
   height: 40px;
   margin-bottom: 10px;
-  padding: 12px 5px 12px 42px;
+  padding: 14px 5px 14px 42px;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   font-size: 16px;
   line-height: 1.17;
   transform: border-color var(--transition);
+  @media (max-width: 480px) {
+    height: calc(40 * (100vw / 480));
+    margin-bottom: calc(10 * (100vw / 480));
+    padding-top: calc(14 * (100vw / 480));
+    padding-left: calc(42 * (100vw / 480));
+    padding-right: calc(5 * (100vw / 480));
+    padding-bottom: calc(14 * (100vw / 480));
+    font-size: calc(16 * (100vw / 480));
+    border-radius: calc(4 * (100vw / 480));
+    border-width: calc(1 * (100vw / 480));
+  }
 }
 
 .form__textarea {
@@ -67,6 +93,15 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transform: border-color var(--transition);
+  @media (max-width: 480px) {
+    margin-bottom: calc(20 * (100vw / 480));
+    height: calc(120 * (100vw / 480));
+    padding-top: calc(12 * (100vw / 480));
+    padding-left: calc(16 * (100vw / 480));
+    padding-right: calc(16 * (100vw / 480));
+    padding-bottom: calc(12 * (100vw / 480));
+    font-size: calc(16 * (100vw / 480));
+  }
 }
 
 /* ---------- modal icon .checkbox ----------- */
@@ -75,6 +110,9 @@
   justify-content: center;
   margin: 30px auto;
   margin-top: 0;
+  @media (max-width: 480px) {
+    margin-bottom: calc(30 * (100vw / 480));
+  }
 }
 
 .form__checkbox {
@@ -98,8 +136,18 @@
   border: 2px solid;
   border-color: var(--title-text-color);
   border-radius: 2px;
-  margin-right: 9px;
+  margin-right: 8px;
   transition: background-color var(--transition), border-color var(--transition);
+  @media (max-width: 480px) {
+    margin-right: calc(8 * (100vw / 480));
+    border-width: calc(2 * (100vw / 480));
+    border-radius: calc(2 * (100vw / 480));
+    width: calc(16 * (100vw / 480));
+    height: calc(15 * (100vw / 480));
+  }
+  @include mq(desc) {
+    margin-right: 9px;
+  }
 }
 
 .form__checkbox {
@@ -116,9 +164,16 @@
 
 .form__checkbox-label {
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+  @media (max-width: 480px) {
+    font-size: calc(12 * (100vw / 480));
+  }
+  @include mq(desc) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .form__checkbox-link {

@@ -1,25 +1,54 @@
 .hero {
-  width: 100vw;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/herobackgroundimg.jpg');
+  height: 400px;
   /* резервний колір */
   background-color: var(--black-bg-color);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (max-width: 480px) {
+    height: calc(400 * (100vw / 480));
+    padding-top: calc(118 * (100vw / 480));
+    padding-bottom: calc(118 * (100vw / 480));
+  }
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../../images/mob/mob-herobackgroundimg.jpg');
+
+  @include mq(retina) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/mob/mob-herobackgroundimg@2x.jpg');
+  }
+
+  @include mq(tab) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/tab/tab-herobackgroundimg.jpg');
+
+    @include mq(retina) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/tab/tab-herobackgroundimg@2x.jpg');
+    }
+  }
+
   @include mq(desc) {
     max-width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../../images/desc/desc-herobackgroundimg.jpg');
+    @include mq(retina) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../../images/desc/desc-herobackgroundimg@2x.jpg');
+    }
   }
 }
 
 .hero__title {
-  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -30,6 +59,15 @@
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
+
+  @media (max-width: 480px) {
+    font-size: calc(26 * (100vw / 480));
+    width: calc(360 * (100vw / 480));
+  }
+
+  @media (min-width: 480px) {
+    width: 360px;
+  }
 
   @include mq(desc) {
     width: 700px;

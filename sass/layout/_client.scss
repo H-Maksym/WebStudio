@@ -1,5 +1,8 @@
 .client__list {
   --card-item: 2;
+  @media (max-width: 480px) {
+    --card-gap: calc(30 * (100vw / 480));
+  }
   @include mq(tab) {
     --card-item: 3;
   }
@@ -16,6 +19,9 @@
   border-radius: 4px;
   color: var(--primary-icon-color);
   transition: border-color var(--transition), color var(--transition);
+  @media (max-width: 480px) {
+    height: calc(92 * (100vw / 480));
+  }
 }
 
 .client__icon {
@@ -28,5 +34,9 @@
   &:focus {
     border-color: var(--accent-text-color);
     color: var(--accent-text-color);
+  }
+  @media (max-width: 480px) {
+    width: calc(106 * (100vw / 480));
+    height: calc(60 * (100vw / 480));
   }
 }
