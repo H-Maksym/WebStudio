@@ -2,10 +2,6 @@
   width: 20px;
   height: 20px;
   fill: currentColor;
-  @media (max-width: 480px) {
-    width: calc(20 * (100vw / 480));
-    height: calc(20 * (100vw / 480));
-  }
 }
 
 .social__link {
@@ -14,11 +10,6 @@
   align-items: center;
   width: 44px;
   height: 44px;
-  @media (max-width: 480px) {
-    width: calc(44 * (100vw / 480));
-    height: calc(44 * (100vw / 480));
-  }
-
   border-radius: 50%;
   color: var(--primary-icon-color);
   transition: color var(--transition), background-color var(--transition);
@@ -43,8 +34,5 @@
   .social--gap {
     --card-gap: 10px;
     justify-content: center;
-    @media (max-width: 480px) {
-      --card-gap: calc(10 * (100vw / 480));
-    }
   }
 }

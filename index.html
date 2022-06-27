@@ -19,7 +19,7 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container card-set">
         <nav class="header__nav card-set">
           <a href="./index.html" class="logo logo--header-gap" lang="en"
@@ -37,18 +37,6 @@
             </li>
           </ul>
         </nav>
-
-        <button type="button" class="btn-menu is-open" aria-expanded="false" data-menu-button>
-          <svg
-            class="button_icon-menu"
-            width="40px"
-            height="40px"
-            aria-label="Переключатель мобильного меню"
-            aria-controls="menu-container"
-          >
-            <use class="icon-menu" href="./images/icon.svg#icon-menu"></use>
-          </svg>
-        </button>
 
         <ul class="contacts header__contact card-set">
           <li class="contacts__item">
@@ -68,7 +56,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- Main Section -->
@@ -654,7 +642,7 @@
           <ul class="social social--gap card-set">
             <li class="social__item">
               <a
-                arial-label="ссылка instagram"
+                aria-label="ссылка instagram"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -667,7 +655,7 @@
             </li>
             <li class="social__item">
               <a
-                arial-label="ссылка twitter"
+                aria-label="ссылка twitter"
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -680,7 +668,7 @@
             </li>
             <li class="social__item">
               <a
-                arial-label="ссылка facebook"
+                aria-label="ссылка facebook"
                 href="https://www.facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -693,7 +681,7 @@
             </li>
             <li class="social__item">
               <a
-                arial-label="ссылка linkedin"
+                aria-label="ссылка linkedin"
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -770,7 +758,7 @@
             </span>
           </label>
 
-          <label class="form__field">
+          <label class="form__field form__field--gap">
             <span class="form__label">Комментарий </span>
             <textarea
               name="coment"
@@ -800,42 +788,70 @@
       </div>
     </div>
 
-    <!-- <div class="mobile-menu is-open" id="menu-container" data-menu> -->
-    <!-- <ul class="social-list">
-        <li class="social-list__item">Instagram</li>
-        <li class="social-list__item">Twitter</li>
-        <li class="social-list__item">Facebook</li>
-        <li class="social-list__item">LinkedIn</li>
-      </ul> -->
+    <div class="mobile-menu is-open card-set" id="menu-container" data-menu>
+      <div class="container">
+        <button type="button" class="btn-menu is-open" aria-expanded="false" data-menu-button>
+          <svg
+            class="btn-menu__icon-menu"
+            width="40px"
+            height="40px"
+            aria-label="Переключатель мобильного меню"
+            aria-controls="menu-container"
+          >
+            <use class="icon-menu" href="./images/icon.svg#icon-menu"></use>
+            <use class="icon-menu-close" href="./images/icon.svg#icon-close"></use>
+          </svg>
+        </button>
 
-    <!-- <button type="button" class="btn-menu is-open" aria-expanded="false" data-menu-button>
-        <svg
-          class="button_icon-menu"
-          width="40px"
-          height="40px"
-          aria-label="Переключатель мобильного меню"
-          aria-controls="menu-container"
-        >
-          <use class="icon-menu" href="./images/icon.svg#icon-menu"></use>
-          <use class="icon-menu-close" href="./images/icon.svg#icon-close"></use>
-        </svg>
-      </button> -->
-    <!-- <ul class="social-list card-set">
-        <li class="social-list__item">
-          <a href="" class="social-list__link" aria-label="ccылка на Instagram">Instagram</a>
-        </li>
-        <li class="social-list__item">
-          <a href="" class="social-list__link" aria-label="ccылка на Twitter">Twitter</a>
-        </li>
-        <li class="social-list__item">
-          <a href="" class="social-list__link" aria-label="ccылка на Facebook">Facebook</a>
-        </li>
-        <li class="social-list__item">
-          <a href="" class="social-list__link" aria-label="ccылка на LinkedIn">LinkedIn</a>
-        </li>
-      </ul> -->
+        <nav class="header__nav card-set">
+          <ul class="site-nav card-set">
+            <li class="site-nav__item">
+              <a href="./index.html" class="site-nav__link site-nav__current">Студия</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#contact" class="site-nav__link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-    <!-- </div> -->
+        <ul class="contacts header__contact card-set">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__link">
+              <svg class="contacts__icon contacts__icon--email" width="14" height="10px">
+                <use href="./images/icon.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a href="tel:+38(096)111-11-11" class="contacts__link">
+              <svg class="contacts__icon contacts__icon--tel" width="10" height="14px">
+                <use href="./images/icon.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+
+        <ul class="social-list card-set">
+          <li class="social-list__item">
+            <a href="" class="social-list__link" aria-label="ccылка на Instagram">Instagram</a>
+          </li>
+          <li class="social-list__item">
+            <a href="" class="social-list__link" aria-label="ccылка на Twitter">Twitter</a>
+          </li>
+          <li class="social-list__item">
+            <a href="" class="social-list__link" aria-label="ccылка на Facebook">Facebook</a>
+          </li>
+          <li class="social-list__item">
+            <a href="" class="social-list__link" aria-label="ccылка на LinkedIn">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>

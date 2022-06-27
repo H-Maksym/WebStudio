@@ -1,6 +1,6 @@
 .address__link {
   display: inline-flex;
-  font-family: var(--primary-font-family);
+  align-items: center;
   font-size: 14px;
   line-height: 1.71;
   color: var(--white-text-color);
@@ -12,7 +12,8 @@
   &:focus {
     color: var(--accent-text-color);
   }
-  @media (max-width: 480px) {
-    font-size: calc(14 * (100vw / 480));
-  }
+}
+
+.address__item {
+  padding: 0;
 }

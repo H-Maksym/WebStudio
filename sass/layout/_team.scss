@@ -1,10 +1,5 @@
 .team__list {
-  @media (max-width: 480px) {
-    --card-gap: calc(30 * (100vw / 480));
-  }
-
   @include mq(tab) {
-    display: flex;
     --card-item: 2;
   }
   @include mq(desc) {
@@ -26,11 +21,6 @@
 
 .team-card {
   padding: 30px 10px 24px;
-  @media (max-width: 480px) {
-    padding-top: calc(30 * (100vw / 480));
-    padding-left: calc(10 * (100vw / 480));
-    padding-bottom: calc(24 * (100vw / 480));
-  }
 
   @include mq(desc) {
     padding-bottom: 30px;
@@ -42,18 +32,10 @@
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 10px;
-  @media (max-width: 480px) {
-    font-size: calc(16 * (100vw / 480));
-    margin-bottom: calc(10 * (100vw / 480));
-  }
 }
 
 .team-card__text {
   font-size: 16px;
   line-height: 1.19;
   margin-bottom: 16px;
-  @media (max-width: 480px) {
-    font-size: calc(16 * (100vw / 480));
-    margin-bottom: calc(16 * (100vw / 480));
-  }
 }

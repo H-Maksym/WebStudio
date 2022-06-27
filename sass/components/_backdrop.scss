@@ -1,9 +1,11 @@
 .backdrop {
   position: fixed;
+
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
+
   background-color: var(--modal-bg-color);
   opacity: 1;
   transition: opacity var(--transition), visibility var(--transition);

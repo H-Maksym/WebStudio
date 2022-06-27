@@ -2,11 +2,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media (max-width: 480px) {
-    padding-top: calc(60 * (100vw / 480));
-    padding-bottom: calc(60 * (100vw / 480));
-  }
-
   @include mq(desc) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -21,11 +16,6 @@
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
-
-  @media (max-width: 480px) {
-    font-size: calc(28 * (100vw / 480));
-    margin-bottom: calc(30 * (100vw / 480));
-  }
 
   @include mq(desc) {
     margin-bottom: 50px;
