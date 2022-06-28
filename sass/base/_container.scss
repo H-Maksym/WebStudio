@@ -6,18 +6,13 @@
   padding-left: 15px;
   //   background-color: pink;
 
-  @media (max-width: 480px) {
-    padding-right: calc(30 * (100vw / 480));
-    padding-left: calc(30 * (100vw / 480));
-  }
-
   @include mq(mob) {
-    // width: 480px;
-    width: 448px;
+    width: 480px;
+    // width: 448px;
   }
   @include mq(tab) {
-    // width: 768px;
-    width: 720px;
+    width: 768px;
+    // width: 720px;
   }
   @include mq(desc) {
     width: 1200px;
