@@ -1,8 +1,10 @@
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
   @include mq(mob-only) {
     .site-nav,
-    .contacts {
+    .contacts,
+    .social-list {
       display: none;
     }
   }

@@ -90,34 +90,33 @@ button {
   border-radius: 0;
   top: 10px;
   right: 15px;
-  color: black;
-  // z-index: 1000;
   background-color: transparent;
-  transition: color var(--transition), opacity var(--transition);
-
-  & .icon-menu-close {
-    display: none;
-    transition: color var(--transition);
+  color: black;
+  transition: color var(--transition);
+  &:hover,
+  &:focus {
+    color: var(--accent-text-color);
   }
-  &.is-open .icon-menu-close {
-    display: block;
-    transition: color var(--transition);
-  }
-
-  &.is-open .icon-menu {
-    display: none;
-    transition: color var(--transition);
-  }
-
-  // &:hover,
-  // &:focus {
-  //   color: var(--accent-text-color);
-  // }
 }
 
 .btn-menu__icon-menu {
   fill: currentColor;
 }
+
+// .btn-menu .icon-menu-close {
+//   display: none;
+//   transition: color var(--transition);
+// }
+
+// .btn-menu.is-open .icon-menu {
+//   display: none;
+//   transition: color var(--transition);
+// }
+
+// .btn-menu.is-open .icon-menu-close {
+//   display: block;
+//   transition: color var(--transition);
+// }
 
 @include mq(tab) {
   .btn-menu {

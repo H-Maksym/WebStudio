@@ -36,3 +36,9 @@
     justify-content: center;
   }
 }
+
+@include mq(tab) {
+  .social-list {
+    display: none;
+  }
+}

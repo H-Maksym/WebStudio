@@ -1,7 +1,9 @@
-.header {
-  .site-nav {
-    --card-item: 3;
-    --card-gap: 50px;
+@include mq(tab) {
+  .header {
+    .site-nav {
+      --card-item: 3;
+      --card-gap: 50px;
+    }
   }
 }
 
@@ -19,20 +21,20 @@
   &:focus {
     color: var(--accent-text-color);
   }
-}
 
-.site-nav__current {
-  position: relative;
-  color: var(--accent-text-color);
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 50%;
-    transform: translatex(-50%);
-    height: 4px;
-    width: 100%;
-    background: #2196f3;
-    border-radius: 2px;
+  &.site-nav__current {
+    position: relative;
+    color: var(--accent-text-color);
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+      transform: translatex(-50%);
+      height: 4px;
+      width: 100%;
+      background: #2196f3;
+      border-radius: 2px;
+    }
   }
 }
