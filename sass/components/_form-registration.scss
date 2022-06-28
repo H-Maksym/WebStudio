@@ -82,8 +82,15 @@
 
 /* ---------- modal icon .checkbox ----------- */
 .form__checkbox-policy {
-  display: block;
-  text-align: center;
+  @media (max-width: 345px) {
+    display: block;
+    text-align: center;
+    line-height: 1.17;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  display: flex;
+  justify-content: center;
   margin-bottom: 30px;
   margin-top: 0;
 }
@@ -103,7 +110,7 @@
 
 .form__icon-check {
   display: inline-flex;
-  align-self: center;
+  // align-self: center;
 
   flex-shrink: 0;
   border: 2px solid;
@@ -130,6 +137,11 @@
 
 .form__checkbox-label {
   // flex-shrink: 0;
+  @media (min-width: 345px) and (max-width: 480px) {
+    font-size: 10px;
+    letter-spacing: 0.02em;
+  }
+
   font-style: normal;
   font-size: 12px;
   line-height: 1.17;
