@@ -33,11 +33,13 @@
 
 .mob-site-nav {
   --card-item: 1;
-  --card-gap: 32px;
   flex-direction: column;
   @media screen and (max-height: 480px) {
-    font-size: 20px;
+    --card-gap: 20px;
+    font-size: 18px;
   }
+  --card-gap: 32px;
+
   margin-bottom: 50px;
 
   .site-nav__link {
@@ -63,19 +65,23 @@
 
 .mob-contacts {
   --card-item: 1;
+  @media screen and (max-height: 480px) {
+    font-size: 22px;
+    --card-gap: 16px;
+  }
   --card-gap: 32px;
   flex-direction: column;
   font-size: 34px;
   line-height: 1.18;
   color: var(--accent-social-link);
   margin-bottom: 64px;
-  @media screen and (max-width: 325px) {
-    font-size: 30px;
-  }
 }
 
 .mob-contacts__link--email {
-  font-size: 24px;
+  @media screen and (max-height: 480px) {
+    font-size: 16px;
+  }
+  font-size: 26px;
   line-height: 1.17;
   color: var(--primary-text-color);
 }

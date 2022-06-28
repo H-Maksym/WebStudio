@@ -332,13 +332,14 @@ button {
 
 .mob-site-nav {
   --card-item: 1;
-  --card-gap: 32px;
   flex-direction: column;
+  --card-gap: 32px;
   margin-bottom: 50px;
 }
 @media screen and (max-height: 480px) {
   .mob-site-nav {
-    font-size: 20px;
+    --card-gap: 20px;
+    font-size: 18px;
   }
 }
 .mob-site-nav .site-nav__link {
@@ -368,16 +369,22 @@ button {
   color: var(--accent-social-link);
   margin-bottom: 64px;
 }
-@media screen and (max-width: 325px) {
+@media screen and (max-height: 480px) {
   .mob-contacts {
-    font-size: 30px;
+    font-size: 22px;
+    --card-gap: 16px;
   }
 }
 
 .mob-contacts__link--email {
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1.17;
   color: var(--primary-text-color);
+}
+@media screen and (max-height: 480px) {
+  .mob-contacts__link--email {
+    font-size: 16px;
+  }
 }
 
 .mob-social-list {
