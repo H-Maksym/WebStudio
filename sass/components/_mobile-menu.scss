@@ -65,7 +65,7 @@
 
 .mob-contacts {
   --card-item: 1;
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 400px) {
     font-size: 22px;
     --card-gap: 16px;
   }
@@ -78,7 +78,7 @@
 }
 
 .mob-contacts__link--email {
-  @media screen and (max-height: 480px) {
+  @media screen and (max-width: 400px) {
     font-size: 16px;
   }
   font-size: 26px;
@@ -87,6 +87,9 @@
 }
 
 .mob-social-list {
+  @media screen and (max-width: 400px) {
+    font-size: 12px;
+  }
   font-size: 18px;
   line-height: 1.22px;
   color: var(--accent-social-link);
