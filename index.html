@@ -31,7 +31,7 @@
               <a href="./index.html" class="site-nav__link site-nav__current">Студия</a>
             </li>
             <li class="site-nav__item">
-              <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+              <a href="./team.html" class="site-nav__link">Портфолио</a>
             </li>
             <li class="site-nav__item">
               <a href="#contact" class="site-nav__link">Контакты</a>
@@ -150,22 +150,11 @@
             <li class="work__item card-set-item">
               <picture>
                 <source
-                  srcset="
-                    ./images/desc/developer-370.webp    370w,
-                    ./images/desc/developer-740@2x.webp 740w
-                  "
-                  sizes="370px"
-                  type="image/webp"
+                  srcset="./images/desc/developer-370.jpg 1x, ./images/desc/developer-740@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
                 />
-                <img
-                  srcset="
-                    ./images/desc/developer-370.jpg    370w,
-                    ./images/desc/developer-740@2x.jpg 740w
-                  "
-                  src="./images/developer.jpg"
-                  alt="Десктопные приложения"
-                  sizes="370px"
-                />
+                <img src="./images/desc/developer-740@2x.jpg" alt="Десктопные приложения" />
               </picture>
 
               <p class="work__text">Десктопные приложения</p>
@@ -174,38 +163,25 @@
               <picture>
                 <source
                   srcset="
-                    ./images/desc/adaptation-370.webp    370w,
-                    ./images/desc/adaptation-740@2x.webp 740w
+                    ./images/desc/adaptation-370.jpg    1x,
+                    ./images/desc/adaptation-740@2x.jpg 2x
                   "
-                  sizes="370px"
-                  type="image/webp"
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
                 />
-                <img
-                  srcset="
-                    ./images/desc/adaptation-370.jpg    370w,
-                    ./images/desc/adaptation-740@2x.jpg 740w
-                  "
-                  src="./images/adaptation.jpg"
-                  alt="Мобильные приложения"
-                  sizes="370px"
-                />
+                <img src="./images/desc/adaptation-740@2x.jpg" alt="Мобильные приложения" />
               </picture>
+
               <p class="work__text">Мобильные приложения</p>
             </li>
             <li class="work__item card-set-item">
               <picture>
                 <source
-                  srcset="./images/desc/design-370.webp 370w, ./images/desc/design-740@2x.webp 740w"
-                  sizes="370px"
-                  type="image/webp"
+                  srcset="./images/desc/design-370.jpg 1x, ./images/desc/design-740@2x.jpg 2x"
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
                 />
-                <!-- sizes="(min-width: 1200px) 370px, 100vw" -->
-                <img
-                  srcset="./images/desc/design-370.jpg 370w, ./images/desc/design-740@2x.jpg 740w"
-                  src="./images/design.jpg"
-                  alt="Дизайнерские решения"
-                  sizes="370px"
-                />
+                <img src="./images/desc/design-740@2x.jpg" alt="Дизайнерские решения" />
               </picture>
 
               <p class="work__text">Дизайнерские решения</p>
@@ -223,29 +199,29 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/demyanenkoihor-270.webp    270w,
-                    ./images/team/demyanenkoihor-540@2x.webp 540w,
-                    ./images/team/demyanenkoihor-354.webp    354w,
-                    ./images/team/demyanenkoihor-708@2x.webp 708w,
-                    ./images/team/demyanenkoihor-450.webp    450w,
-                    ./images/team/demyanenkoihor-900@2x.webp 900w
+                    ./images/team/demyanenkoihor-370.jpg    1x,
+                    ./images/team/demyanenkoihor-740@2x.jpg 2x
                   "
-                  type="image/webp"
-                  sizes="(min-width:1200px) 25vw ,(min-width:768px) 50vw , 100vw"
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
                 />
-                <img
-                  alt="Игорь Демьяненко"
+                <source
                   srcset="
-                    ./images/team/demyanenkoihor-270.jpg    270w,
-                    ./images/team/demyanenkoihor-540@2x.jpg 540w,
-                    ./images/team/demyanenkoihor-354.jpg    354w,
-                    ./images/team/demyanenkoihor-708@2x.jpg 708w,
-                    ./images/team/demyanenkoihor-450.jpg    450w,
-                    ./images/team/demyanenkoihor-900@2x.jpg 900w
+                    ./images/team/demyanenkoihor-354.jpg    1x,
+                    ./images/team/demyanenkoihor-708@2x.jpg 2x
                   "
-                  sizes="(min-width:1200px) 25vw , (min-width:768px) 50vw , 100vw"
-                  src="./images/team/demyanenkoihor-900@2x.jpg "
+                  type="image/jpeg"
+                  media="(min-width:768px)"
                 />
+                <source
+                  srcset="
+                    ./images/team/demyanenkoihor-450.jpg    1x,
+                    ./images/team/demyanenkoihor-900@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:768px)"
+                />
+                <img alt="Игорь Демьяненко" src="./images/team/demyanenkoihor-900@2x.jpg " />
               </picture>
 
               <div class="team-card">
@@ -311,30 +287,31 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/repinaolga-270.webp    270w,
-                    ./images/team/repinaolga-540@2x.webp 540w,
-                    ./images/team/repinaolga-354.webp    354w,
-                    ./images/team/repinaolga-708@2x.webp 708w,
-                    ./images/team/repinaolga-450.webp    450w,
-                    ./images/team/repinaolga-900@2x.webp 900w
+                    ./images/team/repinaolga-370.jpg    1x,
+                    ./images/team/repinaolga-740@2x.jpg 2x
                   "
-                  type="image/webp"
-                  sizes="(min-width:1200px) 25vw ,(min-width:768px) 50vw , 100vw"
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
                 />
-                <img
-                  alt="Ольга Репина"
+                <source
                   srcset="
-                    ./images/team/repinaolga-270.jpg    270w,
-                    ./images/team/repinaolga-540@2x.jpg 540w,
-                    ./images/team/repinaolga-354.jpg    354w,
-                    ./images/team/repinaolga-708@2x.jpg 708w,
-                    ./images/team/repinaolga-450.jpg    450w,
-                    ./images/team/repinaolga-900@2x.jpg 900w
+                    ./images/team/repinaolga-354.jpg    1x,
+                    ./images/team/repinaolga-708@2x.jpg 2x
                   "
-                  sizes="(min-width:1200px) 25vw , (min-width:768px) 50vw , 100vw"
-                  src="./images/team/repinaolga-900@2x.jpg"
+                  type="image/jpeg"
+                  media="(min-width:768px)"
                 />
+                <source
+                  srcset="
+                    ./images/team/repinaolga-450.jpg    1x,
+                    ./images/team/repinaolga-900@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:768px)"
+                />
+                <img alt="Ольга Репина" src="./images/team/repinaolga-900@2x.jpg " />
               </picture>
+
               <div class="team-card">
                 <h3 class="team-card__title">Ольга Репина</h3>
                 <p class="team-card__text">Frontend Developer</p>
@@ -398,30 +375,31 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/tarasovmykola-270.webp    270w,
-                    ./images/team/tarasovmykola-540@2x.webp 540w,
-                    ./images/team/tarasovmykola-354.webp    354w,
-                    ./images/team/tarasovmykola-708@2x.webp 708w,
-                    ./images/team/tarasovmykola-450.webp    450w,
-                    ./images/team/tarasovmykola-900@2x.webp 900w
+                    ./images/team/tarasovmykola-370.jpg    1x,
+                    ./images/team/tarasovmykola-740@2x.jpg 2x
                   "
-                  type="image/webp"
-                  sizes="(min-width:1200px) 25vw ,(min-width:768px) 50vw , 100vw"
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
                 />
-                <img
-                  alt="Николай Тарасов"
+                <source
                   srcset="
-                    ./images/team/tarasovmykola-270.jpg    270w,
-                    ./images/team/tarasovmykola-540@2x.jpg 540w,
-                    ./images/team/tarasovmykola-354.jpg    354w,
-                    ./images/team/tarasovmykola-708@2x.jpg 708w,
-                    ./images/team/tarasovmykola-450.jpg    450w,
-                    ./images/team/tarasovmykola-900@2x.jpg 900w
+                    ./images/team/tarasovmykola-354.jpg    1x,
+                    ./images/team/tarasovmykola-708@2x.jpg 2x
                   "
-                  sizes="(min-width:1200px) 25vw , (min-width:768px) 50vw , 100vw"
-                  src="./images/team/tarasovmykola-900@2x.jpg"
+                  type="image/jpeg"
+                  media="(min-width:768px)"
                 />
+                <source
+                  srcset="
+                    ./images/team/tarasovmykola-450.jpg    1x,
+                    ./images/team/tarasovmykola-900@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:768px)"
+                />
+                <img alt="Николай Тарасов" src="./images/team/tarasovmykola-900@2x.jpg " />
               </picture>
+              ]
               <div class="team-card">
                 <h3 class="team-card__title">Николай Тарасов</h3>
                 <p class="team-card__text">Marketing</p>
@@ -485,30 +463,31 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/ermakovmyhailo-270.webp    270w,
-                    ./images/team/ermakovmyhailo-540@2x.webp 540w,
-                    ./images/team/ermakovmyhailo-354.webp    354w,
-                    ./images/team/ermakovmyhailo-708@2x.webp 708w,
-                    ./images/team/ermakovmyhailo-450.webp    450w,
-                    ./images/team/ermakovmyhailo-900@2x.webp 900w
+                    ./images/team/ermakovmyhailo-370.jpg    1x,
+                    ./images/team/ermakovmyhailo-740@2x.jpg 2x
                   "
-                  type="image/webp"
-                  sizes="(min-width:1200px) 25vw ,(min-width:768px) 50vw , 100vw"
+                  type="image/jpeg"
+                  media="(min-width:1200px)"
                 />
-                <img
-                  alt="Михаил Ермаков"
+                <source
                   srcset="
-                    ./images/team/ermakovmyhailo-270.jpg    270w,
-                    ./images/team/ermakovmyhailo-540@2x.jpg 540w,
-                    ./images/team/ermakovmyhailo-354.jpg    354w,
-                    ./images/team/ermakovmyhailo-708@2x.jpg 708w,
-                    ./images/team/ermakovmyhailo-450.jpg    450w,
-                    ./images/team/ermakovmyhailo-900@2x.jpg 900w
+                    ./images/team/ermakovmyhailo-354.jpg    1x,
+                    ./images/team/ermakovmyhailo-708@2x.jpg 2x
                   "
-                  sizes="(min-width:1200px) 25vw , (min-width:768px) 50vw , 100vw"
-                  src="./images/team/ermakovmyhailo-900@2x.jpg"
+                  type="image/jpeg"
+                  media="(min-width:768px)"
                 />
+                <source
+                  srcset="
+                    ./images/team/ermakovmyhailo-450.jpg    1x,
+                    ./images/team/ermakovmyhailo-900@2x.jpg 2x
+                  "
+                  type="image/jpeg"
+                  media="(max-width:768px)"
+                />
+                <img alt="Михаил Ермаков" src="./images/team/ermakovmyhailo-900@2x.jpg " />
               </picture>
+
               <div class="team-card">
                 <h3 class="team-card__title">Михаил Ермаков</h3>
                 <p class="team-card__text">UI Designer</p>
@@ -818,7 +797,7 @@
             <a href="./index.html" class="site-nav__link site-nav__current">Студия</a>
           </li>
           <li class="mob-site-nav__item">
-            <a href="./portfolio.html" class="site-nav__link">Портфолио</a>
+            <a href="./team.html" class="site-nav__link">Портфолио</a>
           </li>
           <li class="mob-site-nav__item">
             <a href="#contact" class="site-nav__link">Контакты</a>
