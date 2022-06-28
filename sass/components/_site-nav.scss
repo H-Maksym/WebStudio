@@ -25,6 +25,7 @@
   &.site-nav__current {
     position: relative;
     color: var(--accent-text-color);
+
     &::after {
       content: '';
       position: absolute;

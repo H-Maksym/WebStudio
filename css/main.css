@@ -333,13 +333,23 @@ button {
 .mob-site-nav {
   --card-item: 1;
   --card-gap: 32px;
-  flex-direction: column;
-  color: var(--accent-social-link);
 }
 .mob-site-nav .site-nav__link {
   padding: 0;
   font-size: 40px;
   line-height: 1.18;
+  flex-direction: column;
+}
+.mob-site-nav .site-nav__link.site-nav__current {
+  color: var(--accent-social-link);
+}
+.mob-site-nav .site-nav__link.site-nav__current::after {
+  content: "";
+  height: 0;
+  width: 0;
+}
+.mob-site-nav .site-nav__link:hover, .mob-site-nav .site-nav__link:focus {
+  color: var(--accent-text-color);
 }
 
 .mob-contacts {
