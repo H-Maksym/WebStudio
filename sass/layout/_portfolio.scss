@@ -22,6 +22,7 @@
   @include mq(tab) {
     --card-item: 2;
   }
+
   @include mq(desc) {
     --card-item: 3;
   }
@@ -68,10 +69,6 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
-
-  // @include mq(tab) {
-  //   max-width: 354px;
-  // }
 }
 
 .portfolio__title {
