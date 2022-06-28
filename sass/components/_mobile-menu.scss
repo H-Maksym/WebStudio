@@ -66,6 +66,9 @@
   line-height: 1.18;
   color: var(--accent-social-link);
   margin-bottom: 64px;
+  @media screen and (max-width: 325px) {
+    font-size: 30px;
+  }
 }
 
 .mob-contacts__link--email {

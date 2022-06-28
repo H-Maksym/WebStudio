@@ -363,6 +363,11 @@ button {
   color: var(--accent-social-link);
   margin-bottom: 64px;
 }
+@media screen and (max-width: 325px) {
+  .mob-contacts {
+    font-size: 30px;
+  }
+}
 
 .mob-contacts__link--email {
   font-size: 24px;
