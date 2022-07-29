@@ -46,7 +46,7 @@ const arrayImg = [
   {
     title: "Ресторан Seafood",
     type: "Дизайн",
-    filterType: "application",
+    filterType: "design",
     alt: "Ресторан Seafood",
 
     srcImg: "./images/portfolio/applicationseafood-900@2x.jpg ",
