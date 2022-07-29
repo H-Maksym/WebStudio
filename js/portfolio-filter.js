@@ -290,14 +290,14 @@ imgListMarkup(arrayImg);
 
 
 function onBtnClick(e) {
-  imgListEl.innerHTML = "";
-
-  if (e.target !== e.currentTarget && e.target.dataset.tag === "all") {
-    imgListMarkup(arrayImg)
-    return
-  }
-
   if (e.target !== e.currentTarget) {
+    imgListEl.innerHTML = "";
+
+    if (e.target !== e.currentTarget && e.target.dataset.tag === "all") {
+      imgListMarkup(arrayImg)
+      return
+    }
+
     const filteredItems = arrayImg.filter(img => img.filterType.includes(e.target.dataset.tag))
     imgListMarkup(filteredItems)
   }
