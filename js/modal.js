@@ -26,10 +26,14 @@
 
 
 
-  // Скрипт зміни падінга для body в залежності висоти .page-header
+// Скрипт зміни падінга для body в залежності висоти .page-header
 
 // Визначаємо висоту .page-header
 // const { height: pageHeaderHeight } = document.querySelector('.page-header').getBoundingClientRect().height;
 
 // Встановлюємо нову властивість paddingTop для body
 // document.body.style.paddingTop = `${pageHeaderHeight}px`;
+
+
+
+
