@@ -290,18 +290,35 @@ imgListMarkup(arrayImg);
 
 
 function onBtnClick(e) {
-  if (e.target !== e.currentTarget) {
-    imgListEl.innerHTML = "";
-
-    if (e.target !== e.currentTarget && e.target.dataset.tag === "all") {
-      imgListMarkup(arrayImg)
-      return
-    }
-
-    const filteredItems = arrayImg.filter(img => img.filterType.includes(e.target.dataset.tag))
-    imgListMarkup(filteredItems)
+  if (e.target === e.currentTarget) {
+    return;
   }
+
+  imgListEl.innerHTML = "";
+
+  const activeFilter = document.querySelector(".is-active")
+
+  if (activeFilter) {
+    activeFilter.classList.remove("is-active")
+  }
+
+  if (e.target === activeFilter) {
+    imgListMarkup(arrayImg)
+    return
+  }
+
+  if (e.target.dataset.tag === "all") {
+    (e.target).classList.add("is-active")
+    imgListMarkup(arrayImg)
+    return
+  }
+
+  (e.target).classList.add("is-active")
+  const filteredItems = arrayImg.filter(img => img.filterType.includes(e.target.dataset.tag))
+  imgListMarkup(filteredItems)
 }
+
+
 
 filterButtonEl.addEventListener("click", onBtnClick);
 

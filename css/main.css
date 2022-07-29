@@ -243,7 +243,8 @@ button {
 .btn-secondary {
   transition: color var(--transition), box-shadow var(--transition), background-color var(--transition);
 }
-.btn-secondary:hover, .btn-secondary:focus {
+
+.btn-secondary.is-active {
   background-color: var(--accent-text-color);
   color: var(--white-text-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -798,7 +799,6 @@ button {
     width: 16px;
     height: 12px;
   }
-
   .contacts__icon--tel {
     width: 10px;
     height: 16px;
@@ -1219,7 +1219,6 @@ button {
   .footer__contact {
     margin-right: 70px;
   }
-
   .footer__social {
     margin-right: 93px;
   }
